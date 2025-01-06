@@ -1,0 +1,2 @@
+C:\Users\user\RiderProjects\MyPC\MyPC\bin\Release\net8.0\win-x64\publish\MyPC.pdb
+C:\Users\user\RiderProjects\MyPC\MyPC\bin\Release\net8.0\win-x64\publish\MyPC.exe
