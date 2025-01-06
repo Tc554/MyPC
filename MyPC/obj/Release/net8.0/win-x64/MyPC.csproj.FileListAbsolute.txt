@@ -195,3 +195,6 @@ C:\Users\user\RiderProjects\MyPC\MyPC\obj\Release\net8.0\win-x64\refint\MyPC.dll
 C:\Users\user\RiderProjects\MyPC\MyPC\obj\Release\net8.0\win-x64\MyPC.pdb
 C:\Users\user\RiderProjects\MyPC\MyPC\obj\Release\net8.0\win-x64\MyPC.genruntimeconfig.cache
 C:\Users\user\RiderProjects\MyPC\MyPC\obj\Release\net8.0\win-x64\ref\MyPC.dll
+C:\Users\user\RiderProjects\MyPC\MyPC\bin\Release\net8.0\win-x64\WindowsInput.dll
+C:\Users\user\RiderProjects\MyPC\MyPC\obj\Release\net8.0\win-x64\MyPC.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\MyPC\MyPC\obj\Release\net8.0\win-x64\MyPC.sourcelink.json

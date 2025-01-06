@@ -1,9 +1,9 @@
-﻿namespace MyPC.imple;
+﻿namespace MyPC.commands.imple;
 
 public class MouseClickCommand : Command
 {
-    public MouseClickCommand() : base("MouseClick", new List<Param<>> {
-        new Param<string>()
+    public MouseClickCommand() : base("MouseClick", new List<IParam> {
+        new Param<string> { Required = true }
     })
     {
         
