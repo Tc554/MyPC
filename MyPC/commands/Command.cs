@@ -4,8 +4,8 @@ namespace MyPC;
 
 public class Command
 {
-    private string name;
-    private List<IParam> _params;
+    public string name;
+    public List<IParam> _params;
 
     public Command(string name, List<IParam> _params)
     {
@@ -13,7 +13,7 @@ public class Command
         this._params = _params;
     }
 
-    public void Handle(List<IParam> _params)
+    public virtual void Handle(List<IParam> _params)
     {
         
     }

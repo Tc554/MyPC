@@ -2,14 +2,14 @@
 
 public interface IParam
 {
-    object Value { get; }
+    string Value { get; }
     bool Required { get; }
 }
 
-public class Param<T> : IParam
+public class Param : IParam
 {
-    public T Value { get; set; }
-    object IParam.Value => Value;
+    public string Value { get; set; }
+    string IParam.Value => Value;
     public bool Required { get; set; }
     bool IParam.Required => Required;
 }
