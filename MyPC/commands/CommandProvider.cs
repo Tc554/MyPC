@@ -9,6 +9,6 @@ public class CommandProvider : System.Attribute
 
     public CommandProvider(bool enabled)
     {
-        enabled = true;
+        this.enabled = enabled;
     }
 }

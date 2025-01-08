@@ -5,18 +5,18 @@ namespace MyPC.commands.imple;
 [CommandProvider(true)]
 public class MouseClickCommand : Command
 {
-    public MouseClickCommand() : base("MouseClick", new List<IParam> {
-        new Param{ Required = true }
+    public MouseClickCommand() : base("MouseClick", new List<Param> {
+        new Param{ Name = "ClickType" }
     })
     {
         
     }
 
-    public override void Handle(List<IParam> _params)
+    public override void Handle(List<Param> _params)
     {
         InputSimulator robot = CommandHandler.inputSimulator;
 
-        if (Utils.EqualsIgnoreCase((string) _params[0].Value, "left"))
+        if (Utils.EqualsIgnoreCase(GetParamValue(_params, "ClickType"), "left"))
         {
             robot.Mouse.LeftButtonClick();
         }

@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using MyPC.requests;
 using WindowsInput;
 
 namespace MyPC;
@@ -20,29 +21,33 @@ public class CommandHandler
 
         foreach (var type in types)
         {
-            if (type.GetCustomAttribute<CommandProvider>() != null)
+            CommandProvider? provider = type.GetCustomAttribute<CommandProvider>();
+            if (provider != null)
             {
-                Command instance = (Command) Activator.CreateInstance(type);
-                
-                commands.Add(instance);
+                if (provider.enabled)
+                {
+                    Command instance = (Command)Activator.CreateInstance(type);
+
+                    commands.Add(instance);
+                }
             }
         }
     }
 
-    public void Handle(string command, params string[] args)
+    public void Handle(CommandResponse response)
     {
         foreach (var cmd in commands)
         {
-            if (Utils.EqualsIgnoreCase(cmd.name, command))
+            if (Utils.EqualsIgnoreCase(cmd.name, response.Command))
             {
-                cmd.Handle(ArgsToParams(args));
+                cmd.Handle(response.Parameters);
             }
         }
     }
 
-    public List<IParam> ArgsToParams(params string[] args)
+    public List<Param> ArgsToParams(params string[] args)
     {
-        List<IParam> result = new List<IParam>();
+        List<Param> result = new List<Param>();
         
         foreach (var s in args)
         {
