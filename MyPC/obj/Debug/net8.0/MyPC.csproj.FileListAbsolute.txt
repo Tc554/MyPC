@@ -34,3 +34,5 @@ C:\Users\user\RiderProjects\MyPC\MyPC\obj\Debug\net8.0\refint\MyPC.dll
 C:\Users\user\RiderProjects\MyPC\MyPC\obj\Debug\net8.0\MyPC.pdb
 C:\Users\user\RiderProjects\MyPC\MyPC\obj\Debug\net8.0\MyPC.genruntimeconfig.cache
 C:\Users\user\RiderProjects\MyPC\MyPC\obj\Debug\net8.0\ref\MyPC.dll
+C:\Users\user\RiderProjects\MyPC\MyPC\bin\Debug\net8.0\AudioSwitcher.AudioApi.dll
+C:\Users\user\RiderProjects\MyPC\MyPC\bin\Debug\net8.0\AudioSwitcher.AudioApi.CoreAudio.dll

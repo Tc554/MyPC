@@ -16,7 +16,7 @@ public class MouseClickCommand : Command
     {
         InputSimulator robot = CommandHandler.inputSimulator;
 
-        if (Utils.EqualsIgnoreCase(GetParamValue(_params, "ClickType"), "left"))
+        if (Utils.EqualsIgnoreCase(GetParamValue(_params, "ClickType"), "true"))
         {
             robot.Mouse.LeftButtonClick();
         }
